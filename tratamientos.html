@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="LogoCoePag.png">
+    <title>COE: Tratamientos </title>
+    <link rel="stylesheet" href="tratamientos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Coelogopn.png" alt="Clínica Dental" class="logo">
+            <div class="header-text">
+                <h1>COE</h1>
+                <p>Clínica Odontológica Especializada</p>
+            </div>
+        </div>
+<nav>
+    <ul>
+        <li>
+            <div class="nav-social-icons">
+                <a href="https://www.facebook.com/coepuertomadryn" target="_blank">
+                    <img src="FacePNG.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/odontologiacoe.pm/" target="_blank">
+                    <img src="IG png.png" alt="Instagram">
+                </a>
+            </div>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="SB.html">Sobre Nosotros</a></li>
+        <li><a href="Turnos.html">Turnos</a></li>
+        <li><a href="tratamientos.html">Tratamientos</a></li>
+    </ul>
+</nav>
+<button class="hamburger" id="hamburger">&#9776;</button>
+
+<nav class="nav-links" id="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="SB.html">Sobre Nosotros</a>
+    <a href="Turnos.html">Turnos</a>
+    <a href="tratamientos.html">Tratamientos</a>
+  </nav>
+</nav>
+    </header>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.icono-link').forEach(icon => {
+        icon.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            const offset = -100; // Ajusta este valor según la altura de tu header
+
+            if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: elementPosition + offset, behavior: 'smooth' });
+            }
+        });
+    });
+});
+    </script>
+</head> 
+    <div class="iconos-container">
+        <div class="icono-link" data-target="estetica"><img src="Estética dental.png" alt="Estética"><span>Estética</span></div>
+        <div class="icono-link" data-target="cirugia"><img src="Cirugía.png" alt="Cirugía"><span>Cirugía</span></div>
+        <div class="icono-link" data-target="ortodoncia"><img src="Ortodoncia.png" alt="Ortodoncia"><span>Ortodoncia</span></div>
+        <div class="icono-link" data-target="implantes"><img src="Implantes.png" alt="Implantes"><span>Implantes</span></div>
+        <div class="icono-link" data-target="protesis"><img src="Prótesis.png" alt="Prótesis"><span>Prótesis</span></div>
+        <div class="icono-link" data-target="blanqueamiento"><img src="Blanqueamiento.png" alt="Blanqueamiento"><span>Blanqueamiento</span></div>
+        <div class="icono-link" data-target="odontopediatria"><img src="Odontopediatria.png" alt="Odontopediatría"><span>Odontopediatría</span></div>
+    </div>
+    
+    <main class="tratamientos-container">
+        <div id="estetica" class="tratamiento derecha">
+            <img src="Estt.jpg" alt="Implantes Dentales">
+            <div class="info">
+                <h3>Estética dental</h3>
+                <p>Mejora la apariencia de los dientes y la sonrisa mediante carillas, resinas, contorneado dental y otros procedimientos estéticos.</p>
+            </div>
+        </div>
+    
+        <div id="cirugia" class="tratamiento izquierda">
+            <img src="Cirugy.png" alt="Cirugía">
+            <div class="info">
+                <h3>Cirugía</h3>
+                <p>Intervenciones como extracciones de muelas del juicio, cirugía periodontal y corrección de defectos óseos o de encías.</p>
+            </div>
+        </div>
+    
+        <div id="ortodoncia" class="tratamiento derecha">
+            <img src="Orto.png" alt="Ortodoncia">
+            <div class="info">
+                <h3>Ortodoncia</h3>
+                <p>Corrige la alineación de los dientes y la mordida con brackets tradicionales, alineadores invisibles o dispositivos ortopédicos.</p>
+            </div>
+        </div>
+    
+        <div id="implantes" class="tratamiento izquierda">
+            <img src="Implan.png" alt="Implantes Dentales">
+            <div class="info">
+                <h3>Implantes dentales</h3>
+                <p>Reemplazo de dientes perdidos mediante tornillos de titanio que actúan como raíces artificiales y soportan coronas o prótesis.</p>
+            </div>
+        </div>
+    
+        <div id="protesis" class="tratamiento derecha">
+            <img src="Prott.png" alt="Prótesis">
+            <div class="info">
+                <h3>Prótesis dentales</h3>
+                <p>Sustitución de piezas dentales perdidas con prótesis removibles o fijas para restaurar la función y estética de la boca.</p>
+            </div>
+        </div>
+    
+        <div id="blanqueamiento" class="tratamiento izquierda">
+            <img src="Blan.png" alt="Blanqueamiento">
+            <div class="info">
+                <h3>Blanqueamiento dental</h3>
+                <p>Técnica para aclarar el tono de los dientes eliminando manchas y pigmentaciones mediante geles de peróxido de hidrógeno o tratamientos láser.</p>
+            </div>
+        </div>
+    
+        <div id="odontopediatria" class="tratamiento derecha">
+            <img src="Ped.png" alt="Odontopediatría">
+            <div class="info">
+                <h3>Odontopediatría</h3>
+                <p>Cuidado dental especializado para niños, incluyendo prevención de caries, aplicación de flúor y ortodoncia temprana.</p>
+            </div>
+        </div>
+    </main>
+    <a href="https://wa.me/5492804606918" target="_blank" id="whatsapp-btn">
+        <img src="WhatsApp.png.png" alt="WhatsApp">
+        <span id="whatsapp-number">+54 9 280 460-6918</span>
+    </a>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contacts">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: +0280-9-460-6918</p>
+                    <p>Email: coepuertomadrun@gmail.com</p>
+                </div>
+                <div class="about-us">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="Trabaja con nosotros.html">Trabaja con Nosotros</a>
+                    <a href="tratamientos.html">Tratamientos</a>
+                </div>
+            </div>
+    
+            <div class="footer-logo">
+                <img src="Coelogopn.png" alt="Logo Clínica">
+                <h1>COE</h1>
+                <p>Clínica Odontológica Especializada</p>
+            </div>
+    
+            <p class="footer-copyright">&copy; 2025 COE & JL </p>
+        </div>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+          
+            hamburger.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+            });
+          </script>
+    </footer>

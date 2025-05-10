@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="LogoCoePag.png">
+    <title>COE: Turnos</title>
+    <link rel="stylesheet" href="turnos.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Coelogopn.png" alt="Clínica Dental" class="logo">
+            <div class="header-text">
+                <h1>COE</h1>
+                <p>Clínica Odontológica Especializada</p>
+            </div>
+        </div>
+<nav>
+    <ul>
+        <li>
+            <div class="nav-social-icons">
+                <a href="https://www.facebook.com/coepuertomadryn" target="_blank">
+                    <img src="FacePNG.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/odontologiacoe.pm/" target="_blank">
+                    <img src="IG png.png" alt="Instagram">
+                </a>
+            </div>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="SB.html">Sobre Nosotros</a></li>
+        <li><a href="Turnos.html">Turnos</a></li>
+        <li><a href="tratamientos.html">Tratamientos</a></li>
+    </ul>
+</nav>
+<button class="hamburger" id="hamburger">&#9776;</button>
+
+<nav class="nav-links" id="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="SB.html">Sobre Nosotros</a>
+    <a href="Turnos.html">Turnos</a>
+    <a href="tratamientos.html">Tratamientos</a>
+  </nav>
+</nav>
+</header>
+
+<section id="contacto">
+    <div class="contacto-wrapper">
+        <!-- Imagen a la izquierda -->
+        <img src="Horarios.jpg" alt="Imagen de clínica" class="contacto-imagen">
+        
+        <!-- Contenedor de "Sacá tu turno ahora mismo" a la derecha -->
+        <div class="contacto-container">
+            <h2>¡Sacá tu turno ahora mismo!</h2>
+            <p>Ponete en contacto con nosotros y agendá tu turno fácilmente atravez de Whatsapp o Instagram:</p>
+
+            <!-- Botones de contacto -->
+            <div class="contacto-botones">
+                <div class="contacto-boton">
+                    <a href="https://wa.me/5492804606918" class="btn-whatsapp">
+                        <img src="WhatsappLoguito.png" alt="WhatsApp">
+                    </a>
+                </div>
+                <div class="contacto-boton">
+                    <a href="https://www.instagram.com/odontologiacoe.pm/" class="btn-instagram">
+                        <img src="IG png.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Texto y botón de tratamientos -->
+            <p class="contacto-texto">Y si tenés alguna duda respecto a nuestros servicios, podés mirar todos nuestros tratamientos:</p>
+            <a href="tratamientos.html" class="btn-tratamientos">
+                <img src="Trasts.png" alt="Tratamientos"> 
+            </a>
+        </div>
+    </div>
+</section>
+<section id="ubicacion">
+    <div class="ubicacion-container">
+        <div class="info">
+            <h2 class="ubicacion-titulo"><strong>¡También podés sacar un turno en nuestra clínica!</strong></h2>
+            <p><strong>En Lewis Jones 1452, U9120 Puerto Madryn, Chubut.</strong></p>
+            <p><strong>Abierta de 08:00 a 20:00 los días lunes a viernes. </strong> y de 08:00 a 13:00 los sábados</p>
+            <p><strong>¡Te esperamos con ansias!</strong></p>
+        </div>
+        <div class="mapa" style="border: 5px solid #13797c; border-radius: 15px; padding: 5px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.8305971295986!2d-65.0478325234698!3d-42.77360357108927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQ2JzI0LjkiUyA2NcKwMDInNDYuMSJX!5e0!3m2!1ses-419!2sar!4v1707945600000" 
+                width="600" height="400" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+</nav>
+    </header>
+    <a href="https://wa.me/5492804606918" target="_blank" id="whatsapp-btn">
+        <img src="WhatsApp.png.png" alt="WhatsApp">
+        <span id="whatsapp-number">+54 9 280 460-6918</span>
+    </a>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contacts">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: +0280-9-460-6918</p>
+                    <p>Email: coepuertomadrun@gmail.com</p>
+                </div>
+                <div class="about-us">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="Trabaja con nosotros.html">Trabaja con Nosotros</a>
+                    <a href="tratamientos.html">Tratamientos</a>
+                </div>
+            </div>
+    
+    
+            <div class="footer-logo">
+                <img src="Coelogopn.png" alt="Logo Clínica">
+                <h1>COE</h1>
+                <p>Clínica Odontológica Especializada</p>
+            </div>
+    
+            <p class="footer-copyright">&copy; 2025 COE & JL </p>
+        </div>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+          
+            hamburger.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+            });
+          </script>
+    </footer>

@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    background-image: url('CoeFondo2.png'); /* Reemplaza con la ruta correcta */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que el fondo no se mueva */
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Empuja el footer hacia abajo */
+}
+
+/* Estilos de la cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13797c;
+    padding: 15px 20px; /* Se redujo el padding para evitar demasiado espacio */
+    color: white;
+}
+
+header, nav {
+    overflow: visible;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.header-text p {
+    font-size: 14px;
+    font-weight: bold; /* Negrita para el subtítulo */
+    color: white;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Asegura que el transform funcione */
+    transition: all 0.2s ease-in-out; /* Aplica la transición a todas las propiedades */
+}
+
+nav ul li a:hover {
+    transform: translateY(-5px);
+}
+
+/* Íconos de redes sociales en la barra */
+.nav-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.nav-social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de WhatsApp */
+#whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #12d459;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+#whatsapp-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+#whatsapp-number {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#whatsapp-btn:hover #whatsapp-number {
+    display: inline;
+    opacity: 1;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+/* Pie de página mejorado */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #13797c;
+    color: white;
+    position: relative;
+}
+/* Sección izquierda con "Contacto" y "Sobre Nosotros" en línea */
+.footer-left {
+    display: flex;
+    gap: 40px; /* Espacio entre Contacto y Sobre Nosotros */
+    text-align: left;
+}
+
+.footer-left div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Logo centrado en el pie de página */
+.footer-logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 60px; /* Aumentado el tamaño del logo */
+}
+
+.footer-logo p {
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer-logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contacts, .about-us {
+    text-align: left;
+}
+
+.about-us a {
+    display:block;
+    justify-content: left;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px
+    
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}
+
+
+/* Copyright en la esquina inferior izquierda */
+.footer-copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.politica-calidad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.texto {
+    width: 60%;
+}
+
+h2 {
+    color: #13797c;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.fecha {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.fecha span {
+    color: #13797c;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #000;
+}
+
+.imagen {
+    width: 35%;
+}
+
+.imagen img {
+    width: 80%;
+    border-radius: 15px;
+}
+.firma-container {
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 0 auto; /* Centra el elemento */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+} 
+
+.firma-container img {
+    width: 200px;
+    height: auto;
+}
+
+/* NUEVA SECCIÓN: NUESTRA HISTORIA */
+.nuestra-historia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nuestra-historia .texto-historia {
+    width: 60%;
+}
+
+.nuestra-historia .texto-historia h2 {
+    color: #13797c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.nuestra-historia .texto-historia p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nuestra-historia .imagen-historia {
+    width: 32%;
+}
+
+.nuestra-historia .imagen-historia img {
+    width: 60%;
+    border-radius: 15px;
+}
+
+.nav-links a {
+    margin: 10px 0;
+    text-decoration: none;      /* quita subrayado */
+    color: white;               /* texto blanco */
+    font-family: 'Poppins', sans-serif; /* reemplazá con tu fuente si usás otra */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #43E0DC; /* cambio de color al pasar el mouse */
+  }
+  
+  /* BOTÓN HAMBURGUESA estilizado */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+  }
+  
+  /* OPCIONAL: animación al abrir el menú */
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #13797c;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-desktop {
+        display: none !important;
+      }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #008b8b;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 1000;
+      }
+    
+      .nav-links a {
+        margin: 10px 0;
+      }
+    
+      .hamburger {
+        display: block;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 8px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        object-fit: cover;
+    }
+
+    .carousel-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #ubicacion {
+        margin: 80px 20px;
+    }
+    
+    .ubicacion-container {
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+    
+    .info {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .mapa iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+    }
+
+    nav {
+        flex: 1;
+    }
+    
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .seccion-tratamientos,
+    .reseñas,
+    .mapa,
+    footer {
+        padding: 15px;
+    }
+
+    .seccion-tratamientos img,
+    .reseñas img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav-social-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .boton-wsp {
+        font-size: 14px;
+        padding: 10px 20px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .ubicacion-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        padding: 0 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: #006d6d;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        text-align: left;
+    }
+    
+      .footer-logo p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5px;
+        color: white;
+    }
+    
+    /* Derechos de autor centrados al final */
+    footer p.footer-copyright {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+        color: white;
+    }
+    
+    /* Estilos para el menú hamburguesa */
+    .hamburger {
+        display: none;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #13797c;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        z-index: 999;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-weight: bold;
+    }
+    
+    .nav-links a:hover {
+        background-color: white;
+        color: #13797c;
+        border-radius: 5px;
+    }
+    
+    /* Activar menú móvil */
+    .nav-links.active {
+        display: flex;
+    }
+    
+    /* Responsivo */
+    @media (max-width: 768px) {
+        nav ul {
+            display: none;
+        }
+    
+        .hamburger {
+            display: block;
+        }
+    
+        .logo-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .header-text h1 {
+            font-size: 20px;
+        }
+    
+        .header-text p {
+            font-size: 12px;
+        }
+    
+        .ubicacion-container {
+            flex-direction: column;
+        }
+    
+        .info, .mapa iframe {
+            max-width: 100%;
+        }
+    
+        .whatsapp-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-container img {
+            height: 50px; /* o el tamaño que necesites */
+            object-fit: contain;
+        }
+
+        
+    }
+    .nav-links {
+        top: 70px; /* igual o menor que la altura del navbar */
+        right: 10px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
+    }
+}   

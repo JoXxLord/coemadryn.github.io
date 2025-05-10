@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="LogoCoePag.png">
+    <title>COE:Trabaja con Nosotros</title>
+    <link rel="stylesheet" href="trabaja con nosotros.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Coelogopn.png" alt="Clínica Dental" class="logo">
+            <div class="header-text">
+                <h1>COE</h1>
+                <p>Clínica Odontológica Especializada</p>
+            </div>
+        </div>
+<nav>
+    <ul>
+        <li>
+            <div class="nav-social-icons">
+                <a href="https://www.facebook.com/coepuertomadryn" target="_blank">
+                    <img src="FacePNG.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/odontologiacoe.pm/" target="_blank">
+                    <img src="IG png.png" alt="Instagram">
+                </a>
+            </div>
+        </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="SB.html">Sobre Nosotros</a></li>
+        <li><a href="Turnos.html">Turnos</a></li>
+        <li><a href="tratamientos.html">Tratamientos</a></li>
+    </ul>
+</nav>
+<button class="hamburger" id="hamburger">&#9776;</button>
+
+<nav class="nav-links" id="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="SB.html">Sobre Nosotros</a>
+    <a href="Turnos.html">Turnos</a>
+    <a href="tratamientos.html">Tratamientos</a>
+  </nav>
+</nav>
+    </header>
+    <section class="main-content" style="padding: 40px; max-width: 600px; margin: auto;">
+        <h2 style="text-align: center; color: #13797c;">Trabajá con Nosotros</h2>
+        <form action="https://formspree.io/f/tu_codigo_aqui" method="POST" enctype="multipart/form-data">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="Nombre y Apellido" required>
+    
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="Fecha de Nacimiento" required>
+    
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="DNI" required>
+    
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="Correo" required>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="Teléfono" required>
+    
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="Dirección" required>
+    
+            <label for="puesto">Puesto al que Aplica:</label>
+            <select id="puesto" name="Puesto">
+                <option value="Odontólogo">Odontólogo</option>
+                <option value="Asistente Dental">Asistente Dental</option>
+                <option value="Recepcionista">Recepcionista</option>
+                <option value="Higienista">Higienista</option>
+                <option value="Otro">Otro</option>
+            </select>
+    
+            <label for="cv">Subí tu CV (PDF):</label>
+            <input type="file" id="cv" name="CV" accept=".pdf" required>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <a href="https://wa.me/5492804606918" target="_blank" id="whatsapp-btn">
+        <img src="WhatsApp.png.png" alt="WhatsApp">
+        <span id="whatsapp-number">+54 9 280 460-6918</span>
+    </a>
+</div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="contacts">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: +0280-9-460-6918</p>
+                    <p>Email: coepuertomadrun@gmail.com</p>
+                </div>
+                <div class="about-us">
+                    <h3>Sobre Nosotros</h3>
+                    <a href="Trabaja con nosotros.html">Trabaja con Nosotros</a>
+                    <a href="tratamientos.html">Tratamientos</a>
+                </div>
+            </div>
+    
+            <div class="footer-logo">
+                <img src="Coelogopn.png" alt="Logo Clínica">
+                <h1>COE</h1>
+                <p>Clínica Odontológica Especializada</p>
+            </div>
+    
+            <p class="footer-copyright">&copy; 2025 COE & JL </p>
+        </div>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+          
+            hamburger.addEventListener('click', () => {
+              navLinks.classList.toggle('active');
+            });
+          </script>
+    </footer>
