@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    background-image: url('Tratfondo.png'); /* Reemplaza con la ruta correcta */
+    background-image: url('Tratfondo.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -26,7 +26,6 @@ html, body {
     flex: 1;
 }
 
-/* Estilos de la cabecera */
 header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +61,6 @@ header, nav {
     color: white;
 }
 
-/* Menú de navegación */
 nav ul {
     list-style: none;
     display: flex;
@@ -85,7 +83,6 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-/* Íconos de redes sociales en la barra */
 .nav-social-icons {
     display: flex;
     gap: 10px;
@@ -101,7 +98,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Botón de WhatsApp */
+
 #whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -139,7 +136,6 @@ footer {
     margin-top: 80px;
 }
 
-/* Pie de página mejorado */
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -152,7 +148,6 @@ footer {
     position: relative;
 }
 
-/* Sección izquierda con "Contacto" y "Sobre Nosotros" en línea */
 .footer-left {
     display: flex;
     gap: 40px;
@@ -165,7 +160,6 @@ footer {
     gap: 5px;
 }
 
-/* Logo centrado en el pie de página */
 .footer-logo {
     flex-grow: 1;
     text-align: center;
@@ -198,7 +192,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Copyright en la esquina inferior izquierda */
 .footer-copyright {
     position: absolute;
     bottom: 10px;
@@ -207,17 +200,16 @@ footer {
     opacity: 0.8;
 }
 
-/* Contacto */
 #contacto {
     display: flex;
-    justify-content: space-between; /* Separación entre elementos */
-    align-items: center; /* Alinear verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     max-width: 90%;
     margin: 40px auto;
 }
 .contacto-wrapper {
     display: flex;
-    flex-direction: row; /* Alinear la imagen y el cuadro en una línea */
+    flex-direction: row; 
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -257,12 +249,12 @@ footer {
 }
 
 .contacto-imagen {
-    width: 51%; /* Ajustar el tamaño de la imagen */
+    width: 51%; 
     object-fit: cover;
     border-radius: 15px;
 }
 
-/* Botón de tratamientos */
+
 .btn-tratamientos {
     display: flex;
     align-items: center;
@@ -283,11 +275,11 @@ footer {
 }
     
 .btn-tratamientos img {
-    max-width: 100%; /* Ajusta la imagen al ancho del botón */
-    max-height: 100%; /* Ajusta la imagen a la altura del botón */
-    width: auto; /* Mantiene la proporción de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del botón */
+    max-width: 100%; 
+    max-height: 100%; 
+    width: auto; 
+    height: auto; 
+    object-fit: contain; 
 }
 
 .btn-tratamientos:hover {
@@ -296,7 +288,6 @@ footer {
     background-color: #0f5f5c;
 }
 
-/* Estilo de los botones de redes sociales */
 .btn-whatsapp, .btn-instagram {
     width: 70px;
     height: 70px;
@@ -328,7 +319,6 @@ footer {
     height: 40px;
 }
 
-/* Efecto de elevación al pasar el cursor */
 .btn-whatsapp:hover,
 .btn-instagram:hover {
     transform: translateY(-5px);
@@ -351,7 +341,7 @@ footer {
     margin: auto;
     position: relative;
     padding: 20px;
-    background: rgb(255, 255, 255); /* Fondo semitransparente */
+    background: rgb(255, 255, 255); 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
 }
@@ -364,15 +354,14 @@ footer {
     padding: 20px;
 }
 
-/* Agrandar títulos y mejorar estética */
 .info h2 {
-    font-size: 28px; /* Hace el título más grande y proporcional al mapa */
+    font-size: 28px; 
     color: rgb(19, 48, 39);
     margin-bottom: 10px;
 }
 
 .info p {
-    font-size: 20px; /* Agranda los párrafos */
+    font-size: 20px;
     font-weight: bold;
     color: rgb(19, 48, 39);
     margin-bottom: 10px;
@@ -395,19 +384,18 @@ footer {
 
 .nav-links a {
     margin: 10px 0;
-    text-decoration: none;      /* quita subrayado */
-    color: white;               /* texto blanco */
-    font-family: 'Poppins', sans-serif; /* reemplazá con tu fuente si usás otra */
+    text-decoration: none;  
+    color: white;              
+    font-family: 'Poppins', sans-serif; 
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color: #43E0DC; /* cambio de color al pasar el mouse */
+    color: #43E0DC;
   }
   
-  /* BOTÓN HAMBURGUESA estilizado */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -428,7 +416,6 @@ footer {
     transition: 0.3s ease;
   }
   
-  /* OPCIONAL: animación al abrir el menú */
   .hamburger.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -670,7 +657,6 @@ footer {
         color: white;
     }
     
-    /* Derechos de autor centrados al final */
     footer p.footer-copyright {
         text-align: center;
         margin-top: 20px;
@@ -678,7 +664,6 @@ footer {
         color: white;
     }
     
-    /* Estilos para el menú hamburguesa */
     .hamburger {
         display: none;
         font-size: 30px;
@@ -713,12 +698,10 @@ footer {
         border-radius: 5px;
     }
     
-    /* Activar menú móvil */
     .nav-links.active {
         display: flex;
     }
     
-    /* Responsivo */
     @media (max-width: 768px) {
         nav ul {
             display: none;
@@ -762,14 +745,14 @@ footer {
         }
         
         .logo-container img {
-            height: 50px; /* o el tamaño que necesites */
+            height: 50px; 
             object-fit: contain;
         }
 
         
     }
     .nav-links {
-        top: 70px; /* igual o menor que la altura del navbar */
+        top: 70px; 
         right: 10px;
     }
     nav {
@@ -781,5 +764,11 @@ footer {
     }
     .contacto-imagen {
         display: none;
-    }    
+    } 
+          footer {
+    padding: 10px 0; 
+    margin: 0; 
+    width: 100vw; 
+    box-sizing: border-box;
+  }   
 }   

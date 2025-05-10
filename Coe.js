@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    /** PRIMER CARRUSEL (sin cambios) **/
     const slide = document.querySelector(".carousel-slide");
     let index = 0;
 
@@ -8,16 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
         slide.style.transform = `translateX(${-index * 100}%)`;
     }
 
-    setInterval(avanzarPrimerCarrusel, 3000); // Cambio cada 3s
+    setInterval(avanzarPrimerCarrusel, 12000);
 
-    /** SEGUNDO CARRUSEL (corregido) **/
     const carrusel = document.querySelector(".reseñas-carrusel");
     const reseñas = document.querySelectorAll(".reseña");
     const totalReseñas = reseñas.length;
     let indiceActual = 0;
     let enTransicion = false;
 
-    // Clonar la primera reseña y agregarla al final
     const primerElemento = reseñas[0].cloneNode(true);
     carrusel.appendChild(primerElemento);
 
@@ -43,5 +40,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    setInterval(avanzarCarrusel, 3000);
+    setInterval(avanzarCarrusel, 12000);
 });

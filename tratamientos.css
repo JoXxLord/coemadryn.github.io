@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    background-image: url('Tratfondo.png'); /* Reemplaza con la ruta correcta */
+    background-image: url('Tratfondo.png'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,10 +23,9 @@ html, body {
 }
 
 .main-content {
-    flex: 1; /* Empuja el footer hacia abajo */
+    flex: 1; 
 }
 
-/* Estilos de la cabecera */
 header {
     display: flex;
     justify-content: space-between;
@@ -62,7 +61,6 @@ header, nav {
     color: white;
 }
 
-/* Menú de navegación */
 nav ul {
     list-style: none;
     display: flex;
@@ -85,7 +83,6 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-/* Íconos de redes sociales en la barra */
 .nav-social-icons {
     display: flex;
     gap: 10px;
@@ -134,7 +131,6 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Botón de WhatsApp */
 #whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -168,7 +164,6 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-/* Pie de página */
 footer {
     margin-top: 80px;
 }
@@ -234,7 +229,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Copyright */
 .footer-copyright {
     position: absolute;
     bottom: 10px;
@@ -250,7 +244,7 @@ footer {
     margin: 40px 0;
     width: 100%;
     padding: 0;
-    overflow: hidden; /* Evita desplazamientos inesperados */
+    overflow: hidden; 
 }
 
 .tratamiento {
@@ -271,12 +265,12 @@ footer {
 }
 
 .icono-tratamiento {
-    width: 10px; /* Ajusta el tamaño según sea necesario */
+    width: 10px; 
 
 }
 
 .icono-tratamiento:nth-child(2) {
-    width: 40px; /* Ajusta según necesites */
+    width: 40px; 
     height: auto;
 }
 
@@ -286,59 +280,54 @@ footer {
     flex-direction: row;
 }
 
-/* Tratamientos pares a la izquierda */
 .tratamiento:nth-child(even) {
     align-self: flex-start;
     text-align: left;
     flex-direction: row-reverse;
 }
 
-
-/* Fondo para los tratamientos izquierdos */
 .tratamiento:nth-child(odd)::before {
     right: 0;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(25, 109, 121, 0.404));
 }
-/* Fondo para los tratamientos derechos */
+
 .tratamiento:nth-child(even)::before {
     left: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(25, 109, 121, 0.404));
 }
 
 .tratamiento:nth-child(odd):hover ~ body {
-    background-position: -50px center; /* Desplaza la imagen de fondo */
+    background-position: -50px center; 
 }
 
-/* Efecto hover */
 .tratamiento:hover {
     transform: scale(1.08);
 }
 
 
 .tratamiento img {
-    max-width: 250px; /* Ajusta según necesites */
+    max-width: 250px; 
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 15px; /* Ajusta según la redondez deseada */
+    border-radius: 15px; 
     position: relative;
     z-index: 2;
 }
 
-/* Información del tratamiento */
 .tratamiento .info {
     flex: 1;
     z-index: 2;
     font-weight: bold; 
-    padding-left: 30px; /* Ajusta el texto más hacia el centro */
-    padding-right: 30px; /* Equilibra el espacio en ambos lados */
-    text-align: center; /* Asegura que el texto esté centrado */
-    max-width: 80%; /* Evita que el texto se expanda demasiado */
-    margin: 0 auto; /* Centra el contenido dentro de la caja */
+    padding-left: 30px; 
+    padding-right: 30px; 
+    text-align: center; 
+    max-width: 80%;
+    margin: 0 auto; 
 }
 
 .tratamiento h3 {
-    font-size: 24px; /* Texto más grande */
+    font-size: 24px; 
     margin-bottom: 15px;
     color: #1cd3da;
 }
@@ -348,7 +337,6 @@ footer {
     font-weight: bold; 
 }
 
-/* Fondo difuminado */
 .tratamiento::before {
     content: "";
     position: absolute;
@@ -360,7 +348,7 @@ footer {
 }
 .tratamiento.izquierda {
     flex-direction: row-reverse;
-    text-align: left; /* Asegura la alineación correcta del texto */
+    text-align: left; 
 }
 
 .tratamiento.derecha::before {
@@ -372,19 +360,18 @@ footer {
 
 .nav-links a {
     margin: 10px 0;
-    text-decoration: none;      /* quita subrayado */
-    color: white;               /* texto blanco */
-    font-family: 'Poppins', sans-serif; /* reemplazá con tu fuente si usás otra */
+    text-decoration: none;      
+    color: white;               
+    font-family: 'Poppins', sans-serif; 
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color: #43E0DC; /* cambio de color al pasar el mouse */
+    color: #43E0DC; 
   }
   
-  /* BOTÓN HAMBURGUESA estilizado */
   .hamburger {
     display: none;
     flex-direction: column;
@@ -405,7 +392,6 @@ footer {
     transition: 0.3s ease;
   }
   
-  /* OPCIONAL: animación al abrir el menú */
   .hamburger.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -647,7 +633,6 @@ footer {
         color: white;
     }
     
-    /* Derechos de autor centrados al final */
     footer p.footer-copyright {
         text-align: center;
         margin-top: 20px;
@@ -655,7 +640,6 @@ footer {
         color: white;
     }
     
-    /* Estilos para el menú hamburguesa */
     .hamburger {
         display: none;
         font-size: 30px;
@@ -690,12 +674,10 @@ footer {
         border-radius: 5px;
     }
     
-    /* Activar menú móvil */
     .nav-links.active {
         display: flex;
     }
     
-    /* Responsivo */
     @media (max-width: 768px) {
         nav ul {
             display: none;
@@ -739,14 +721,14 @@ footer {
         }
         
         .logo-container img {
-            height: 50px; /* o el tamaño que necesites */
+            height: 50px; 
             object-fit: contain;
         }
 
         
     }
     .nav-links {
-        top: 70px; /* igual o menor que la altura del navbar */
+        top: 70px; 
         right: 10px;
     }
     nav {
@@ -766,17 +748,17 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        margin-bottom: 20px; /* Espacio entre bloques */
+        margin-bottom: 20px; 
         display: flex;
         align-items: center;
-        gap: 20px; /* Espacio entre imagen e info */
+        gap: 20px;
     }
 
     .tratamiento img {
         margin-top: 15px;
         width: 35%;
         border-radius: 0;
-        border-radius: 15px; /* Puedes ajustar el valor a tu gusto */
+        border-radius: 15px;
         max-width: 100%;
         height: auto;
     }
@@ -791,4 +773,10 @@ footer {
         flex-direction: column !important;
         align-items: center;
     }
+          footer {
+    padding: 10px 0;
+    margin: 0; 
+    width: 100vw; 
+    box-sizing: border-box;
+  }
 }

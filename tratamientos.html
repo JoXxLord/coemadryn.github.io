@@ -50,8 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         icon.addEventListener('click', function() {
             const targetId = this.getAttribute('data-target');
             const targetElement = document.getElementById(targetId);
-            const offset = -100; // Ajusta este valor según la altura de tu header
-
+            const offset = -100; 
             if (targetElement) {
                 const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({ top: elementPosition + offset, behavior: 'smooth' });
